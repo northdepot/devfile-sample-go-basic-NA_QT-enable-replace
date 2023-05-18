@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/devfile-sample-go-basic@sha256:c40d8e9030276b83da59c8107882a55a13b35f0a1993d7d31b64f3769b9f482c
+        name: my-go
+        resources: {}
+status: {}
